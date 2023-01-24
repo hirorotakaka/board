@@ -22,6 +22,6 @@ public class BoardController {
     @RequestMapping(value = "/", method = RequestMethod.GET)
     public String index(Model model) {
         model.addAttribute("form", PostFactory.newPost());
-        return "layout";
+        return "/layout";
     }
 }
